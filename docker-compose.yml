@@ -6,7 +6,7 @@ services:
     stdin_open: true
     container_name: node
     privileged: true
-    image: node:lts-alpine
+    image: node:lts
     networks:
       node:
     ports:
