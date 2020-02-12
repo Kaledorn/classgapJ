@@ -1,0 +1,18 @@
+{
+  "name": "classgap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch-live-server": "npx live-server ./public/",
+    "watch-sass": "npx sass --watch scss:public/css",
+    "dev": "npx concurrently 'npm:watch-*'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.25.0",
+    "concurrently": "^5.1.0"
+  }
+}

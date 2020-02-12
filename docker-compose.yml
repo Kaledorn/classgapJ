@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  node:
+    tty: true
+    user: root
+    stdin_open: true
+    container_name: node
+    privileged: true
+    image: node:latest
+    networks:
+      node:
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/App:rw
+    working_dir: /App
+networks:
+  node:
+    driver: bridge
